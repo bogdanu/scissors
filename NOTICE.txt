@@ -1,0 +1,17 @@
+Scissors - Rock-paper-scissors game
+Copyright (C) 2013 Bogdan Pistol
+
+This product depends on the Java Specification Requests (JSR) 305: Annotations for Software Defect Detection (http://code.google.com/p/jsr-305/),
+it is open source software licensed under the New BSD License.
+License: LICENSE.jsr305.txt
+
+
+-- Test dependencies --
+
+This product has test dependency on the JUnit testing framework (http://junit.sourceforge.net/),
+it is open source software licensed under the CPL License version 1.0.
+License: LICENSE.junit.txt
+
+This product has test dependency on the Mockito library (http://code.google.com/p/mockito/),
+it is open source software licensed under the MIT License.
+License: LICENSE.mockito.txt
