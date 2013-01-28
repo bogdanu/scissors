@@ -1,0 +1,6 @@
+# IntelliJ IDEA related files
+.idea
+scissors.iml
+
+# Maven target folder
+target
