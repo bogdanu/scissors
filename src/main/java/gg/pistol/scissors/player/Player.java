@@ -15,6 +15,11 @@
  */
 package gg.pistol.scissors.player;
 
+import gg.pistol.scissors.game.Gesture;
+import gg.pistol.scissors.game.RefereeListener;
+
+import javax.annotation.Nullable;
+
 /**
  * Entity that is able to play a game.
  *
@@ -22,11 +27,20 @@ package gg.pistol.scissors.player;
  *
  * @author Bogdan Pistol
  */
-public interface Player extends PlayerRefereeListener {
+public interface Player extends RefereeListener {
 
     /**
      * @return the name of the player
      */
     String getName();
+
+    /**
+     * The Referee asks for the player gesture. This method should be implemented by a player to return
+     * the gesture quickly (e.g. it should not take more time than the throw limit) or the player will lose.
+     *
+     * @return the gesture the player throws or null in case the player does not throw (e.g. the throw limit is exceeded)
+     */
+    @Nullable
+    Gesture getPlayerGesture();
 
 }
